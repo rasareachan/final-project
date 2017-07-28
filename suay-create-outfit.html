@@ -74,7 +74,7 @@
 
 <h2 class="w3-center">Tops</h2>
 
-<div class="w3-content w3-display-container" style="padding-bottom:50px;">
+<div class="w3-content w3-display-container" style="padding-bottom:10px;">
   <center><img class="mySlides" src="croppedsweater.jpg" style="height:300px"></center>
   <center><img class="mySlides" src="offtheshoulder.jpg" style="height:300px"></center>
   <center><img class="mySlides" src="nikewindbreaker.jpg" style="height:300px"></center>
@@ -88,14 +88,14 @@
  <h2 class="w3-center">Bottoms</h2>
     <br>
 <div class="w3-content w3-display-container" style="padding-top:50px;">
-  <center><img class="mySlides" src="denimjeans.jpeg" style="height:300px"></center>
-  <center><img class="mySlides" src="blackslacks.jpeg" style="height:300px"></center>
-  <center><img class="mySlides" src="nikelegging.jpg" style="height:300px"></center>
+  <center><img class="mySlides1" src="denimjeans.jpeg" style="height:300px"></center>
+  <center><img class="mySlides1" src="blackslacks.jpeg" style="height:300px"></center>
+  <center><img class="mySlides1" src="nikelegging.jpg" style="height:300px"></center>
   
   
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
 </div>
    
 <script>
@@ -115,6 +115,25 @@ function showDivs(n) {
      x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+}
+  
+  
+var slideIndex1 = 1;
+showDivs1(slideIndex1);
+
+function plusDivs1(n) {
+  showDivs1(slideIndex1 += n);
+}
+
+function showDivs1(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex1 = 1}    
+  if (n < 1) {slideIndex1 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex1-1].style.display = "block";  
 }
 </script>
 
