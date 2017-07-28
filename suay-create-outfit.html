@@ -18,19 +18,24 @@
   nav.navbar-navbar-default{
       background-color: #2eb8b8;
       height: 80px;
-      overflow: hidden;
-      position: fixed;
-      top: 0;
-      width: 100%;
-
   }
   nav.navbar-navbar-default li a {
       color: #d0d0d0;
       align: center;
   }
-  .nav.navbar-navbar-default a {
+  
+.navbar1 {
+  overflow: hidden;
+  background-color: #2eb8b8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar1 a {
   float: left;
   display: block;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -67,7 +72,7 @@
 
 <body>
   <nav class="navbar-navbar-default">
-    <div class="container-fluid" >
+    <div class="container-fluid navbar1" >
 
       <div class="dropdown">
       <a href="#" data-toggle="dropdown" class="dropdown-toggle">
