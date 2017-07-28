@@ -18,12 +18,24 @@
   nav.navbar-navbar-default{
       background-color: #2eb8b8;
       height: 80px;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
 
   }
   nav.navbar-navbar-default li a {
       color: #d0d0d0;
       align: center;
   }
+  .nav.navbar-navbar-default a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
   a {
       color: #d0d0d0;
@@ -44,7 +56,11 @@
   	color:#000000;
     font-size: 20px;
   }
-  
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
 </style>
 
 
@@ -72,7 +88,7 @@
   </nav>
   <hr style="height:10px;background-color:#1c756c;margin-top: -.4px;border-color: #1c756c;">
 
-<div class="container">
+<div class="container main">
 <h1>Create Outfit</h1>
 <h2 class="w3-center">Tops</h2>
 
