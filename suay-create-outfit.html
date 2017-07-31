@@ -1,21 +1,24 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<title>Suay Wardrobe</title>
-	<link rel="shortcut icon" href="https://github.com/rasareachan/final-project/blob/gh-pages/IMG_6350.PNG?raw=true"></link>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+<title>Suay Outfit</title>
+  <link rel="shortcut icon" href="https://github.com/rasareachan/final-project/blob/gh-pages/IMG_6353.PNG?raw=true"></link>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-
 <style>
+
 #navbar {
 	background-color: #2eb8b8;
     height: 80px;
-    
+
 }
 nav.navbar-navbar-default li a {
     color: #d0d0d0;
@@ -31,7 +34,7 @@ a {
     margin-top: -77px !important;
     display: block;
 }
-	
+
 body {background-color:#f5f5dc;
       }
 h2   {color:#1c756c;
@@ -40,9 +43,9 @@ p {
 	color:#000000;
     font-size: 20px
 }
-       
+
 div hr {
-  position: fixed; 
+  position: fixed;
   width: 110%;
   margin: 0;
   left: -1px;
@@ -63,24 +66,25 @@ div hr {
             <li><a href="https://rasareachan.github.io/final-project/suay-about.html">About</a></li>
         </ul>
     <ul class="nav navbar-nav">
-    
+
    <a class="brand"  href="https://rasareachan.github.io/final-project/suay.html">
       <img height=75px src="https://github.com/rasareachan/final-project/blob/gh-pages/photos/IMG_6329.PNG?raw=true">
     </a>
     </ul>
   </div>
 </nav>
-  
-  
+
+
 <div class="container">
 <hr style="height:10px;background-color:#1c756c;margin-top: 80px;border-color: #1c756c;"/>
 </div>
 
 <div class="container">
 <br><br><br><br><br><br><br><br>
+
+
 <h1>Create Outfit</h1>
 <h2 class="w3-center">Tops</h2>
-
 
 <div class="w3-content w3-display-container" style="padding-bottom:10px;">
   <center><img class="mySlides" src="croppedsweater.jpg" style="height:300px"></center>
@@ -93,16 +97,14 @@ div hr {
   <center><img class="mySlides" src="longsleevedpink.jpg" style="height:300px"></center>
   <center><img class="mySlides" src="shortsleevedblue.jpg" style="height:300px"></center>
   <center><img class="mySlides" src="trenchcoat.jpg" style="height:300px"></center>
-  <center><img class="mySlides" src="shortsleevedcoral.jpg" style="height:300px"></center>
-  
+
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
 <br>
-  
-<h2 class="w3-center">Tops</h2>
- 
+
+ <h2 class="w3-center">Bottoms</h2>
 <div class="w3-content w3-display-container" style="padding-top:50px;">
   <center><img class="mySlides1" src="denimjeans.jpeg" style="height:300px"></center>
   <center><img class="mySlides1" src="blackslacks.jpeg" style="height:300px"></center>
@@ -114,54 +116,55 @@ div hr {
   <center><img class="mySlides1" src="lightwashedshorts.jpg" style="height:300px"></center>
   <center><img class="mySlides1" src="nikeworkoutshorts.jpg" style="height:300px"></center>
   <center><img class="mySlides1" src="shortshorts.jpg" style="height:300px"></center>
-  
-  <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id="fileupload"> <label for="fileupload"> 
+
+  <form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id="fileupload"> <label for="fileupload">
     Select a file to upload</label> <br>
+
+
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
 </div>
-   
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
+  if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
 }
-  
-  
+
+
 var slideIndex1 = 1;
 showDivs1(slideIndex1);
-
 function plusDivs1(n) {
   showDivs1(slideIndex1 += n);
 }
-
 function showDivs1(n) {
   var i;
   var x = document.getElementsByClassName("mySlides1");
-  if (n > x.length) {slideIndex1 = 1}    
+  if (n > x.length) {slideIndex1 = 1}
   if (n < 1) {slideIndex1 = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none";
   }
-  x[slideIndex1-1].style.display = "block";  
+  x[slideIndex1-1].style.display = "block";
 }
 </script>
 
 
 </div>
+</div>
 
 </body>
+</html>
+Contact GitHub API Training Shop Blog About
