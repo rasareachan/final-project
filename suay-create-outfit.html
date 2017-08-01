@@ -14,11 +14,9 @@
 </head>
 
 <style>
-
 #navbar {
 	background-color: #2eb8b8;
     	height: 80px;
-
 }
 nav.navbar-navbar-default li a {
     color: #d0d0d0;
@@ -34,7 +32,6 @@ a {
     margin-top: -77px !important;
     display: block;
 }
-
 body {background-color:#f5f5dc;
       }
 h2   {color:#1c756c;
@@ -45,11 +42,10 @@ p {
 }
 	
 hr {
-
-	position: fixed;
-	width:100%;
-	margin: 0;
-	left: -1px;
+	position: fixed !important;
+	width:100% !important;
+	left: -1px !important;
+    	z-index:10;
 }
 	
 </style>
@@ -77,7 +73,7 @@ hr {
   </div>
 </nav>
 
-<hr style="height:10px;background-color:#1c756c;margin-top: 80px;border-color: #1c756c;"/>
+<hr style="height:10px;background-color:#1c756c !important;margin-top: 80px !important;border-color: #1c756c !important;"/>
 
 <br><br><br><br><br><br><br><br>
 
@@ -140,8 +136,6 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
-
-
 var slideIndex1 = 1;
 showDivs1(slideIndex1);
 function plusDivs1(n) {
@@ -165,4 +159,3 @@ function showDivs1(n) {
 
 </body>
 </html>
-
