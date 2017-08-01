@@ -45,6 +45,44 @@ h2   {color:#1c756c;
 p    {color:#000000;
       font-size: 20px;
        }
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #d0d0d0;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 
 
 </style>
@@ -86,6 +124,12 @@ p    {color:#000000;
 			<figure>
 				<center><a href="https://www.linkedin.com/in/dariana-villamil-15535b141"><img src="dari.jpg" class="img-circle" width="304px"></a></center>
 			</figure>
+			<div class="container">
+  <img src="dari.jpg"  class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">LinkedIn Page</div>
+  </div>
+</div>
 		</div>
 
 		<div class="col-md-4">
@@ -98,6 +142,7 @@ p    {color:#000000;
 			<figure>
 				<center><a href="https://www.linkedin.com/in/rasarea-chan-3b435b141"><img src="roz.jpg" class="img-circle" width="304px"></a></center>
 			</figure>
+			
 		</div>
 	</div>
 	<div class="row">
