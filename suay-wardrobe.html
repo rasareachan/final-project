@@ -85,9 +85,12 @@ div hr {
 
 	<div class="container"><h1>Wardrobe</h1>
 	<p>This is your online wardrobe filled with images of clothing from your real-life closet. Simply take a photo of the article and upload here to keep them organized.</p><br>
-	
-	<form action="myform.cgi"> <input type="file" name="fileupload" value="fileupload" id="fileupload"> <label for="fileupload"> 
-    Upload clothing from library</label></div><br>
+
+<form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit"><label for="fileupload"> 
+    Upload clothing from library</label>
+</form><br>
 
     <div class="container"><h2>Tops</h2></div>
  
